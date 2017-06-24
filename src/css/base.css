@@ -1,0 +1,15 @@
+html {
+    font-family: "Open Sans", "Helvetica", "Sans-Serif"
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1rem;
+}
