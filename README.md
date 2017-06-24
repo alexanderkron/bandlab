@@ -6,6 +6,3 @@ To run app,
  make && make start
  ```
  then visit http://localhost:9000
-
-`make && make start`
-
