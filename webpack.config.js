@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        posts: './src/posts.js',
-        samples: './src/samples.js',
+        posts: './src/posts-index.js',
+        samples: './src/samples-index.js',
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
@@ -24,7 +24,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000
     }
