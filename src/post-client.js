@@ -6,12 +6,6 @@ export default class PostClient {
         this.posts = [];
     }
 
-    storePosts(jsonPromise) {
-        jsonPromise.then(posts => {
-            this.posts = posts;
-        });
-    }
-
     _getUsers() {
         return fetch(this.USERS_ENDPOINT).then(response => {
             return response.json()
