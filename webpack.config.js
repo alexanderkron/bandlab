@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        posts: './src/posts-index.js',
-        samples: './src/samples-index.js',
+        posts: './src/components/posts.js',
+        samples: './src/components/samples.js',
     },
     output: {
         filename: '[name].js',

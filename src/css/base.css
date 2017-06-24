@@ -3,13 +3,28 @@ html {
 }
 
 body {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 main {
     padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.post {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0 1rem;
+}
+
+.post + .post {
+    margin-top: 1rem;
+}
+
+.post-title {
+    display: inline-block;
 }
