@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import PostClient from '../post-client.js'
 
+import PostClient from '../post-client.js'
 import Post from './post.js'
 
 class Posts extends React.Component {
@@ -73,6 +73,6 @@ class Posts extends React.Component {
 }
 
 ReactDOM.render(
-  <Posts/>,
-  document.getElementById('root')
+    <Posts/>,
+    document.getElementById('root')
 );

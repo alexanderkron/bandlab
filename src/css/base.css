@@ -1,5 +1,5 @@
 html {
-    font-family: "Open Sans", "Helvetica", "Sans-Serif"
+    font-family: "Helvetica", "Sans-Serif"
 }
 
 body {
@@ -19,6 +19,7 @@ main {
     border: 1px solid #000;
     border-radius: 3px;
     padding: 0 1rem;
+    max-width: 600px;
 }
 
 .post + .post {

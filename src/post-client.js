@@ -6,15 +6,9 @@ export default class PostClient {
         this.posts = [];
     }
 
-    cachePosts(jsonPromise) {
+    storePosts(jsonPromise) {
         jsonPromise.then(posts => {
             this.posts = posts;
-        });
-    }
-
-    cacheUsers(jsonPromise) {
-        jsonPromise.then(users => {
-            this.users = users;
         });
     }
 
@@ -33,9 +27,6 @@ export default class PostClient {
     }
 
     getPosts() {
-        // If we've already retrieved the posts, just give user cached results
-        // In the real world this would need to be invalidated but that's a
-        // whole thing ¯\_(ツ)_/¯
         if (this.posts.length) {
             return Promise.resolve(this.posts);
         }
@@ -66,7 +57,7 @@ export default class PostClient {
     }
 
     sortPostsByTitle() {
-        // This will reorder the post cache so attempting to get posts
+        // This will reorder the post store so attempting to get posts
         // again will still return ordered posts. Maybe this is okay?
         return this.posts.sort((onePost, anotherPost) => {
             if (onePost.title > anotherPost.title) {
@@ -84,7 +75,7 @@ export default class PostClient {
     }
 
     sortPostsByUsername() {
-        // This will reorder the post cache so attempting to get posts
+        // This will reorder the post store so attempting to get posts
         // again will still return ordered posts. Maybe this is okay?
         return this.posts.sort((onePost, anotherPost) => {
             if (onePost.username > anotherPost.username) {
