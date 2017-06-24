@@ -1,7 +1,13 @@
 all:
-	cp ./src/templates/index.html dist/
-	cp ./src/templates/posts.html dist/
-	cp ./src/templates/samples.html dist/
+	@if [ -d ./dist ] ; \
+	then \
+		 rm -rf ./dist ; \
+	fi;
+
+	@mkdir dist
+	@cp ./src/templates/* dist/
+
+	@echo "Build successful"
 
 start:
-	node node_modules/webpack-dev-server/bin/webpack-dev-server.js
+	@node node_modules/webpack-dev-server/bin/webpack-dev-server.js
