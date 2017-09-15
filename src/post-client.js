@@ -1,7 +1,7 @@
 export default class PostClient {
     constructor() {
-        this.POST_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts'
-        this.USERS_ENDPOINT = 'https://jsonplaceholder.typicode.com/users'
+        this.POST_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts';
+        this.USERS_ENDPOINT = 'https://jsonplaceholder.typicode.com/users';
 
         this.posts = [];
     }
